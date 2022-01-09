@@ -21,11 +21,8 @@ function fuzzyMatch(drivers,listName){
 })
 }
 
-function matchName(driver,matchToFind ){
-    return  driver.filter(function(driver){
-        
-        
-        return driver[0].name===matchToFind[-1].name
-  
-})
+
+
+function matchName(drivers,matchTofind){
+    return drivers.filter(driver=>driver.name==matchTofind)
 }
